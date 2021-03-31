@@ -1,0 +1,73 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Page Title</title>
+        <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+    </head>
+    <body>
+    
+      <div id="contain">
+        <label for="selected_unit">From</label>
+        <select id="selected_unit">
+          <optgroup label="Metric system">
+            <option value="Mt">metric ton</option>
+            <option value="Gm">gigagram</option>
+            <option value="Mm">megagram</option>
+            <option value="km">kilogram</option>
+            <option value="hm">hectogram</option>
+            <option value="dam">decagram</option>
+            <option value="m">gram</option>
+            <option value="dm">decigram</option>
+            <option value="cm">centigram</option>
+            <option value="mm">milligram</option>
+            <option value="μm">microgram</option>
+            <option value="nm">nanogram</option>
+          </optgroup>
+        </select>
+        <div id="input_" >
+            <span id="input__">0</span>
+            <span id="sy"></span>
+        </div>
+        
+        
+        <hr>
+        <label for="required_unit">To</label>
+        <select id="required_unit">
+            <option value="Mt">metric ton</option>
+            <option value="Gm">gigagram</option>
+            <option value="Mm">megagram</option>
+            <option value="km">kilogram</option>
+            <option value="hm">hectogram</option>
+            <option value="dam">decagram</option>
+            <option value="m">gram</option>
+            <option value="dm">decigram</option>
+            <option value="cm">centigram</option>
+            <option value="mm">milligram</option>
+            <option value="μm">microgram</option>
+            <option value="nm">nanogram</option>
+        </select>
+        <div id="result">0</div>
+      </div>
+        
+        
+        <div class="keypad">
+            <div onclick="append_n(9)">9</div>
+            <div onclick="append_n(8)">8</div>
+            <div onclick="append_n(7)">7</div>
+            <div onclick="del_elemn()">⌫</div>
+            <div onclick="append_n(6)">6</div>
+            <div onclick="append_n(5)">5</div>
+            <div onclick="append_n(4)">4</div>
+            <div onclick="all_clear()">AC</div>
+            <div onclick="append_n(3)">3</div>
+            <div onclick="append_n(2)">2</div>
+            <div onclick="append_n(1)">1</div>
+            <div onclick="change_bg()" id="chc">
+                Dark<sup id="btn"> on</sup>
+            </div>
+            <div onclick="append_n('.')">•</div>
+            <div onclick="append_n(0)">0</div>
+            <div onclick="calc_fial()">=</div>
+        </div>
+    </body>
+</html>
